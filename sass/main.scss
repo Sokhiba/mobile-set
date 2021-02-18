@@ -1,0 +1,305 @@
+/*****FONT STYLE*****/
+@font-face{
+    font-family: "OpenSans-Bold"; 
+    src: url(../fonts/Open-Sans/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: "OpenSans-Light";
+    src: url(../fonts/Open-Sans/OpenSans-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: "OpenSans-SemiBold";
+    src: url(../fonts/Open-Sans/OpenSans-SemiBold.ttf) format("truetype");
+}
+@font-face{
+    font-family: "OpenSans-Regular";
+    src: url(../fonts/Open-Sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+.font-family-bold{
+    font-family: "OpenSans-Bold", sans-serif;
+}
+.font-family-light{
+    font-family: "OpenSans-Light", sans-serif;
+    
+}
+.font-family-semi-bold{
+    font-family: "OpenSans-SemiBold",sans-serif;
+}
+.font-family-regular{
+    font-family: "OpenSans-Regular", sans-serif;
+}
+
+/*****COLORS*****/
+
+$bg-color:#F8F8FA;
+$news-font-color:#888888;
+
+/*****ICONS******/
+.icon{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-size:100%;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #000;
+    vertical-align: sub;
+
+    &.icon-drop{
+    mask-image: url(../icons/Path.png);
+    -webkit-mask-image: url(../icons/Path.png);
+    }
+
+    &.icon-search{
+      width: 20px;
+      height: 20px;
+        mask-image: url(../icons/search.svg);
+        -webkit-mask-image: url(../icons/search.svg);
+    }
+    &.icon-phone{
+        mask-image: url(../icons/phone-call.png);
+        -webkit-mask-image: url(../icons/phone-call.png);
+    }
+    &.icon-user{
+        mask-image: url(../icons/user.png);
+        -webkit-mask-image: url(../icons/user.png);
+    }
+    &.icon-view{
+        width: 15px;
+        height: 15px;
+        mask-image: url(../icons/eye.png);
+        -webkit-mask-image: url(../icons/eye.png);
+    }
+    &.icon-arrow{
+        mask-image: url(../icons/arrow-right.png);
+        -webkit-mask-image: url(../icons/arrow-right.png);
+    }
+  &.icon-telegram{
+    width: 16px;
+    height: 16px;
+    mask-image: url("../icons/001-telegram.png");
+    -webkit-mask-image: url("../icons/001-telegram.png");
+  }
+  &.icon-instagram{
+    width: 16px;
+    height: 16px;
+    mask-image: url("../icons/002-instagram.png");
+    -webkit-mask-image: url("../icons/002-instagram.png");
+  }
+  &.icon-facebook{
+    //width: 16px;
+    //height: 16px;
+    mask-image: url("../icons/003-facebook-logo.png");
+    -webkit-mask-image: url("../icons/003-facebook-logo.png");
+  }
+    
+}
+
+/*******Navbar style****/
+body{
+    background-color: $bg-color;
+.navbar{
+    .container{
+        .dropdown{
+            .btn, .icon{
+              
+                vertical-align: sub;
+            }
+        }
+        .input-group{
+            width:300px;
+            input, button{
+                vertical-align: sub;
+            }
+        }
+    }
+}
+
+header{
+    background-color: white!important;
+    
+    .container{
+        button{
+            background-color: $bg-color;
+            
+                width: 156px;
+                height: 46px;
+            }
+          
+        }
+    .carousel{
+        ul{
+            li{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: transparent;
+                opacity: 1;
+                border: 1.5px solid #fff;
+
+                &.active{
+                    width: 12px;
+                    height: 12px;
+                    background-color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    }
+
+
+main{
+  section{
+    &#news{
+      .container{
+        a{
+          color: #000;
+
+        }
+        .card{
+          .card-body{
+            p{
+              color: $news-font-color;
+
+            }
+            .count-view{
+              .icon{
+                margin-top:6px ;
+                margin-right: 5px;
+                background-color: $news-font-color;
+              }
+            }
+            .line{
+              width: 113%;
+              height: 1.5px;
+              background-color:$news-font-color;
+              margin-top: 16px;
+              margin-bottom: 16px;
+              margin-left: -20px;
+
+            }
+          }
+        }
+
+        .card:hover{
+          box-shadow: 0 4px 4px 0 rgba(142, 142, 142, 0.41);
+          p{
+            color: black;
+          }
+          .icon-view{
+            background-color: black!important;
+          }
+        }
+      }
+    }
+
+    &#mobile{
+      .container{
+        .col-7{
+          .ovalU{
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(55px,50px);
+          }
+
+          .ovalB{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(450px, -135px);
+              }
+          .ovalP{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(230px, -110px);
+
+          }
+          .ovalUm{
+            width: 195px;
+            height: 195px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(0px, -145px);
+          }
+          .ovalUz{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(409px, -288px);
+          }
+        }
+        .col-5{
+          .ovalPh{
+            position: relative;
+            position: relative;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(50px, 14px);
+          }
+          .phone{
+            position: absolute;
+            top: -120px;
+            left: 30px;
+
+          }
+        }
+      }
+    }
+  }
+
+}
+footer{
+  background-color: #fff;
+  .container{
+    .row{
+      .col-3{
+        a{
+          color: silver;
+      }
+    }
+      .col-2{
+        button{
+          background-color: $bg-color;
+        }
+        p{
+          color: silver!important;
+          font-size: 14px;
+        }
+      }
+      .col-4{
+        .nav-item{
+          margin-right: 16px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $bg-color;
+          }
+        }
+      .col-6{
+        a{
+          margin-left: -10px!important;
+        }
+      }
+      }
+  }
+
+}
+
+
+}
+
+
+
+
